@@ -63,7 +63,10 @@ const LoginScreen = () => {
 
             <TouchableOpacity
               style={defaultStyles.button}
-              onPress={handleSubmit}
+              onPress={() => {
+                handleSubmit();
+                navigation.navigate("Home");
+              }}
             >
               <Text style={defaultStyles.buttonText}> Увійти </Text>
             </TouchableOpacity>

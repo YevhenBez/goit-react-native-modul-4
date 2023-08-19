@@ -2,6 +2,8 @@ import RegistrationScreen from "../../Screens/RegistrationScreen/RegistrationScr
 
 import LoginScreen from "../../Screens/LoginScreen/LoginScreen";
 
+import Home from "../../Screens/Home/Home";
+
 import { createStackNavigator } from "@react-navigation/stack";
 
 const AuthStack = createStackNavigator();
@@ -14,6 +16,7 @@ export const NavigationRouting = () => {
         component={RegistrationScreen}
       />
       <AuthStack.Screen name="LoginScreen" component={LoginScreen} />
+      <AuthStack.Screen name="Home" component={Home} />
     </AuthStack.Navigator>
   );
 };
